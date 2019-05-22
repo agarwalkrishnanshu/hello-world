@@ -1,14 +1,12 @@
 public class Solution {
     public ArrayList<Integer> primesum(int A) {
         boolean prime[] = new boolean[A+1];
-        //ArrayList<ArrayList<Integer>> sol = new ArrayList<ArrayList<Integer>>();
         ArrayList<Integer> p = new ArrayList<Integer>();
         //Finding all the prime numbers upto A
         for(int i=2;i<A+1;i++)
         {
             prime[i]=true;
         }
-        
         for(int i=2;i<=(int)Math.sqrt(A);i++)
         {
             if(prime[i])
@@ -29,8 +27,6 @@ public class Solution {
                 break;
             }
         }
-        //return (sol.get(0));
-        //return sol.get(0);
         return p;
     }
 }
